@@ -21,8 +21,8 @@ echo -e "${GREEN}Please enter your EVM (0x) wallet address:${NC}"
 read wallet_address
 
 # Replace the placeholder in the script with the provided wallet address
-echo -e "${GREEN}Replacing placeholder with your wallet address...${NC}"
-sed -i "s/0x-Fill-in-your-reward-address-here/$wallet_address/" ~/setup_linux.sh
+echo -e "${GREEN}Running setup script with your wallet address...${NC}"
+bash ~/setup_linux.sh $wallet_address
 
 # Run the setup script with the updated wallet address
 echo -e "${GREEN}Running setup script...${NC}"
