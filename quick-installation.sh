@@ -24,10 +24,6 @@ read wallet_address
 echo -e "${GREEN}Running setup script with your wallet address...${NC}"
 bash ~/setup_linux.sh $wallet_address
 
-# Run the setup script with the updated wallet address
-echo -e "${GREEN}Running setup script...${NC}"
-bash ~/setup_linux.sh
-
 # Execute the start.sh script inside ~/cysic-verifier/
 echo -e "${GREEN}Executing start.sh script...${NC}"
 cd ~/cysic-verifier/ && bash start.sh
